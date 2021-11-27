@@ -5,23 +5,28 @@ class TreeNode:
         self.left = left
         self.right = right
 
-#class Solution:
-def maxPathSum(rootNode):
-    leftGain = 0
-    rightGain = 0
+class Solution:
+    def maxPathSum(self, rootNode):
+        self.maxSum = rootNode.val
+        nodalGain = self.nodalMaxPathSum(rootNode)
+        if self.maxSum < nodalGain:
+            self.maxSum = nodalGain
+        return self.maxSum
 
-    if rootNode.left != None:
-        gain = maxPathSum(rootNode.left)
-        if leftGain < gain:
-            leftGain = gain
-    if rootNode.right != None:
-        gain = maxPathSum(rootNode.right)
-        if rightGain < gain:
-            rightGain = gain
-    
-    return rootNode.val + leftGain + rightGain
+    def nodalMaxPathSum(self, rootNode):
+        if rootNode == None:
+            return 0
+        
+        leftGain = max(self.nodalMaxPathSum(rootNode.left), 0)
+        rightGain = max(self.nodalMaxPathSum(rootNode.right), 0)
+        subtreeGain = rootNode.val + leftGain + rightGain
+        if self.maxSum < subtreeGain:
+            self.maxSum = subtreeGain
+        return rootNode.val + max(leftGain, rightGain)
 
 
 t1 = TreeNode(1, TreeNode(2), TreeNode(3))
 t2 = TreeNode(-10, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
-maxGain = maxPathSum(t)
+t3 = TreeNode(-3)
+s = Solution()
+maxGain = s.maxPathSum(t2)
