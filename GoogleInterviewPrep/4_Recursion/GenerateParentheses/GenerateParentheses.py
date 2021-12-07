@@ -79,3 +79,12 @@ Solution().generateParenthesis(5)  # len = 25
 Solution().generateParenthesis(6)  # len = 50
 Solution().generateParenthesis(7)  # len = 136
 Solution().generateParenthesis(8)  # len = 217
+
+
+## Solution differences
+expected = ["(((())))","((()()))","(()(()))","(()()())","((())())","(())(())","(())()()","()()(())","()()()()"]
+actual = ["(((())))","((()()))","((())())","((()))()","(()(()))","(()()())","(()())()","(())(())","(())()()","()((()))","()(()())","()(())()","()()(())","()()()()"]
+diff = []
+for pair in actual:
+    if not (pair in expected):
+        diff.append(pair)

@@ -46,11 +46,11 @@ class Solution:
                 self.preqs[bi].append(ai)
             else:
                 self.preqs[bi] = [ai]
-        print(f"preqs = {self.preqs}")
+        ##print(f"preqs = {self.preqs}")
 
         # Create a (list) graph to track if the selected node has been visited or not
         self.state = [self.UNVISITED for k in range(numCourses)]
-        print(f"state = {self.state}")
+        ##print(f"state = {self.state}")
 
         # Start traversing the graph and populate orderedCourses list
         self.orderedCourses = []
