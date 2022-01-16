@@ -1,0 +1,6 @@
+# Ignore cpp object files
+*.o
+*.exe
+
+# Ignore python built objects
+*pycache*
