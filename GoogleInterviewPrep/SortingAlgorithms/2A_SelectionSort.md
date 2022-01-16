@@ -25,6 +25,12 @@ arr[] = 64 25 12 22 11
 11 12 22 25 64 
 ```
 
+## Complexity
+**Time Complexity:** O(n^2) as there are two nested loops  
+**Auxiliary Space:** O(1)  
+**In Place:** Yes, it does not require extra space  
+
+## Links
 https://www.geeksforgeeks.org/selection-sort/  
 [C++ Implementation](SelectionSort.cpp)  
 [Python Implementation](SelectionSort.py)  

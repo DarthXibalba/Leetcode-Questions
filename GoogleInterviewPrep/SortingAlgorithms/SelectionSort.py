@@ -22,6 +22,7 @@ class Solution:
 
 if __name__ == '__main__':
     A = [64, 25, 12, 22, 11]
+    print(f"A = {A}")
     S = Solution.selectionSort(A)
-    print(A)
-    print(S)
+    print(f"A = {A}")
+    print(f"S = {S}")
