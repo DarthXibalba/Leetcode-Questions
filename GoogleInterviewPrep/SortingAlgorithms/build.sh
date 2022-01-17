@@ -1,6 +1,7 @@
 #!/bin/bash
 if [ "$1" = "all" ]; then
     gcc SelectionSort.cpp -lstdc++ -o SelectionSort.o
+    gcc BubbleSort.cpp -lstdc++ -o BubbleSort.o
 elif [ "$1" = "clean" ]; then
     rm *.o
 else
