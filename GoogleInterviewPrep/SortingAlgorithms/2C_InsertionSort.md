@@ -27,4 +27,3 @@ i = 4. 6 will move to position after 5, and elements from 11 to 13 will move one
 ## Links
 https://www.geeksforgeeks.org/insertion-sort/  
 [C++ Implementation](InsertionSort.cpp)  
-[Python Implementation](InsertionSort.py)  
