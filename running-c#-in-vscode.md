@@ -1,12 +1,12 @@
 # Running C# in VSCode
 [Original Link](https://travis.media/how-to-run-csharp-in-vscode/)  
 
-## 1. Install .NET 5.0
-[Install .NET 5.0](https://dotnet.microsoft.com/download) or newer  
+## 1. Install .NET 6.0
+[Install .NET](https://dotnet.microsoft.com/download) 6.0 or newer  
 Then confirm that dotnet is installed by checking the version in a terminal window:
 ```
 dotnet --version
-# 5.0.202 (or whatever version is installed)
+# 6.0.201 (or whatever version is installed)
 ```
 Install [C# for Visual Studio Code (by Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) VSCode Plugin  
 
