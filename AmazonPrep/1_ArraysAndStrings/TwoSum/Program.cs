@@ -19,10 +19,58 @@ namespace TwoSum
             return new int[]{};
         }
 
-        public int[] TwoSum(int[] nums, int target)
+        public int[] TwoSum_Optimal1(int[] nums, int target)
         {
-            var result = TwoSum_BruteForce(nums, target);
-            return result;
+            // Create a hashmap to store elements & their respective indices
+            var hashmap = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Count(); i++)
+            {
+                hashmap[nums.ElementAt(i)] = i; // This overwrites if there is a duplicate value
+            }
+            for (int i = 0; i < nums.Count(); i++)
+            {
+                var compliment = target - nums.ElementAt(i);
+                // Make sure that hashmap[compliment] doesn't just match to itself
+                if (hashmap.ContainsKey(compliment) && hashmap[compliment] != i)
+                {
+                    return new int[]{i, hashmap[compliment]};
+                }
+            }
+            return new int[]{};
+        }
+
+        public int[] TwoSum_Optimal2(int[] nums, int target)
+        {
+            // Create hashmaps to store elements with their respective indices, as well as the elements compliments
+            var hashmap = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Count(); i++)
+            {
+                // Check to see if compliment already exists in hashmap
+                var n = nums.ElementAt(i);
+                var compliment = target - n;
+                if (hashmap.ContainsKey(compliment))
+                {
+                    return new int[]{hashmap[compliment], i};
+                }
+                hashmap[n] = i;
+            }
+            return new int[]{};
+        }
+
+        public int[] TwoSum(int[] nums, int target, int optLvl = 3)
+        {
+            if (optLvl == 1)
+            {
+                return TwoSum_BruteForce(nums, target);
+            }
+            else if (optLvl == 2)
+            {
+                return TwoSum_Optimal1(nums, target);
+            }
+            else
+            {
+                return TwoSum_Optimal2(nums, target);
+            }
         }
     }
 
