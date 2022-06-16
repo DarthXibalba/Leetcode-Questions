@@ -1,0 +1,5 @@
+# Ignore C# build files
+bin/
+
+# Ignore C# dependency files (these can be restored by running "dotnet restore", but this is is also implicitly called in any dotnet cmd that requires a restore)
+obj/

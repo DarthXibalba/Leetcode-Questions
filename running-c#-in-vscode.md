@@ -13,7 +13,7 @@ Install [C# for Visual Studio Code (by Microsoft)](https://marketplace.visualstu
 ## 2. Create a new C# project in VSCode
 Next, create a new project and open it in VSCode:
 ```
-dotnet console -o appName
+dotnet new console -o appName -f net6.0
 cd appName
 code .  # to open project in VSCode
 ```
