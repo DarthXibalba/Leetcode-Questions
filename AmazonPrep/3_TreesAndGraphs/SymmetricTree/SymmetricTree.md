@@ -2,14 +2,16 @@
 Given the `root` of a binary tree, *check whether it is a mirror of itself* (i.e., symmetric around its center).  
 
 #### Example 1:
-![Example 1](/images/example1.png)
+<img src="images/example1.png" width="200" height="200">
+
 ```
 Input: root = [1,2,2,3,4,4,3]
 Output: true
 ```
 
 #### Example 2:
-![Example 2](/images/example2.png)
+<img src="images/example2.png" width="200" height="200">
+
 ```
 Input: root = [1,2,2,null,3,null,3]
 Output: false
