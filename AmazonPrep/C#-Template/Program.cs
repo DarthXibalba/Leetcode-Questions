@@ -10,19 +10,21 @@ namespace Project
         }
     }
 
-    static class Program
+    public static class Program
     {
-        static void PrintOutput()
+        public static void PrintOutput()
         {
-            
+
         }
-        static void Main(string[] args)
+
+        public static void Main(string[] args)
         {
             // Declare inputs
             var myVar = new List<int[]>{};
             // Compute
             var sln = new Solution();
             // Display output
+            PrintOutput();
         }
     }
 }
