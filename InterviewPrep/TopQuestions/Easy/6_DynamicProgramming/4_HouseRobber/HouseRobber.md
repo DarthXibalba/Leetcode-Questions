@@ -22,3 +22,7 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 #### Constraints:
 - `1 <= nums.length <= 100`
 - `0 <= nums[i] <= 400`
+
+#### Excalidraw of Solution
+
+<img src="images/excalidraw.png" width="600" height="300">
