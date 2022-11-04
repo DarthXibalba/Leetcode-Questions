@@ -24,3 +24,10 @@ Explanation: There are three ways to climb to the top.
 
 #### Constraints:
 - `1 <= n <= 45`
+
+#### Follow up:
+How could we extend our solution to accommodate if it were possible to take `1`,`2`, or `3` steps at a time?
+
+<img src="images/extensionTo3Steps.png" width="600" height="400">
+
+As shown above, this is a modified Fibonacci series which contain distinct subproblems. To generate a solution, it may be more "natural" to devise the recursive solution since that would be **top-down** *(like this graph)*, and then extend it to the much faster iterative solution *(which would be **bottom-up**)*.
