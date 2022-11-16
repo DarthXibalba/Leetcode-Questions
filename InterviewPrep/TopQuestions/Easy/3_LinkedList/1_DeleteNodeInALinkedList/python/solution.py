@@ -24,9 +24,12 @@ def printLinkedList(head):
         node = node.next
     print(output)
 
-# Since we don't have access to head, we cannot set prevNode.next = curNode.next
-# Therefore we must copy all values after node and delete the last node
-def deleteNode(head):
+# Approach 1: Copy all subsequent nodes
+# Time Complexity: O(N)
+# Space Complexity: O(1)
+#   Since we don't have access to head, we cannot set prevNode.next = curNode.next
+#   Therefore we must copy all values after node and delete the last node
+def deleteNode1(head):
     """
     :type node: ListNode
     :rtype: void - Do not return anything, modify in-place instead
@@ -44,7 +47,12 @@ def deleteNode(head):
     newTail = nodeDeque.popleft()
     newTail.next = None
 
-
+# Approach 2: Copy the next node's value, then skip over the next node
+# Time Complexity: O(1)
+# Space Complexity: O(1)
+def deleteNode(node):
+    node.val = node.next.val
+    node.next = node.next.next
 
 
 
