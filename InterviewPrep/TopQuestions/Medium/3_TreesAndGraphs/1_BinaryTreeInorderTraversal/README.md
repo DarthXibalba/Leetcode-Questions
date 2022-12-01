@@ -2,6 +2,8 @@
 Given the `root` of a binary tree, return *the inorder traversal of its nodes' values.*
 
 #### Example 1:
+<img src="images/example1.jpg" width="150" height="200">
+
 ```
 Input: root = [1,null,2,3]
 Output: [1,3,2]
