@@ -26,4 +26,4 @@ Output: 1
 - `n == nums3.length`
 - `n == nums4.length`
 - `1 <= n <= 200`
-- -2<sup>28</sup> `<= nums1[i], nums2[i], nums3[i], nums4[i] <=` 2<sup>28</sup>
+- `-2ˣ <= nums1[i], nums2[i], nums3[i], nums4[i] <= 2ˣ`, `x=28`
