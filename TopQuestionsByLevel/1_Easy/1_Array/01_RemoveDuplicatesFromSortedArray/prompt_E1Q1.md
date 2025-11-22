@@ -5,23 +5,7 @@ Since it is impossible to change the length of the array in some languages, you 
 
 Return `k` *after placing the final result in the first `k` slots of `nums`*  
 
-Do **not** allocate extra space for anothe array. You must do this by **modifying the input array in-place** with O(1) extra memory.  
-
-**Custom Judge:**  
-The judge will test your solution with the following code  
-```
-int[] nums = [...]; // Input array
-int[] expectedNums = [...]; // The expected answer with correct length
-
-int k = removeDuplicates(nums); // Calls your implementation
-
-assert k == expectedNums.length;
-for (int i = 0; i < k; i++) {
-    assert nums[i] == expectedNums[i];
-}
-```
-
-If all assertions pass, then your solution will be **accepted**.  
+Do **not** allocate extra space for another array. You must do this by **modifying the input array in-place** with O(1) extra memory.    
 
 #### Example 1:
 ```
