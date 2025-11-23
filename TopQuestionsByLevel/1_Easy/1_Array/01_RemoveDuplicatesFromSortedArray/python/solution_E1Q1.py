@@ -14,22 +14,18 @@ class TestCase:
         self.input = input
         self.k = k
         self.nums = nums
-    
-    def print(self):
-        print("Input = " + str(self.input))
-        print("k = " + str(self.k))
-        print("Expected output = " + str(self.nums))
 
 if __name__ == "__main__":
-    tests = [TestCase([1,1,2], 2, [1,2]),
-             TestCase([0,0,1,1,1,2,2,3,3,4], 5, [0,1,2,3,4]),
-             TestCase([1,2], 2, [1,2])]
+    tests = [
+        TestCase([1,1,2], 2, [1,2]),
+        TestCase([0,0,1,1,1,2,2,3,3,4], 5, [0,1,2,3,4]),
+        TestCase([1,2], 2, [1,2])
+    ]
     
     for t in tests:
-        t.print()
         k = RemoveDuplicates(t.input)
-        print("| ----- Output ----- |")
-        print("k = " + str(k))
-        print("Input = " + str(t.input))
-        print()
+
+        assert k == t.k, f"Expected k={t.k}, got {k}"
+        assert t.input[:k] == t.nums, f"Expected nums={t.nums}, got {t.input[:k]}"
     
+    print("All tests passed!")
