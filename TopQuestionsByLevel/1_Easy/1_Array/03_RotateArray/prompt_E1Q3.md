@@ -21,9 +21,9 @@ rotate 2 steps to the right: [3,99,-1,-100]
 ```
 
 #### Constraints:
-- `1 <= nums.length <= 10^5`
-- `-2^31 <= nums[i] <= 2^31 - 1`
-- `0 <= k <= 10^5`
+- `1 <= nums.length <= 10⁵`
+- `-2³¹ <= nums[i] <= 2³¹ - 1`
+- `0 <= k <= 10⁵`
 
 #### Follow up:
 - Try to come up with as many solutions as you can. There are at least **three** different ways to solve this problem

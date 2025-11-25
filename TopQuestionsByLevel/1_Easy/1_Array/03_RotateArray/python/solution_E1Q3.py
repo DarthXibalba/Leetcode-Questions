@@ -1,37 +1,48 @@
-def RotateArray1(nums, k):
-    L = len(nums)
-    k = k % L
-    output = [0]*L
-    # Populate output from array[k->end->start->k]
-    j = 0
-    for i in range(L-k, L):
-        output[j] = nums[i]
-        j += 1
-    for i in range(L-k):
-        output[j] = nums[i]
-        j += 1
-    for i in range(L):
-        nums[i] = output[i]
+class TestCase:
+    def __init__(self, input, k, output):
+        self.input = input
+        self.k = k
+        self.output = output
 
-#def RotateArray2(nums, k):
-#    L = len(nums)
-#    for _ in range(k):
-#        #shiftRight(nums)
-#        for i in range(L):
-#            temp = nums[0]
-#            nums[i] = nums[i-1]
+def RotateArray(nums, k):
+    print(nums)
+    n = len(nums)
+    kmod = k % n
+    reverseArray(nums, 0, n-1)
+    print(nums)
+    reverseArray(nums, 0, kmod-1)
+    print(nums)
+    reverseArray(nums, kmod, n-1)
+    print(nums)
+    print()
 
+def reverseArray(nums, bound1, bound2):
+    while bound1 < bound2:
+        tmp = nums[bound1]
+        nums[bound1] = nums[bound2]
+        nums[bound2] = tmp
+        bound1 += 1
+        bound2 -= 1
 
+def sameArray(output, expOutput):
+    if len(output) != len(expOutput):
+        return False
+    
+    for i in range(len(output)):
+        if output[i] != expOutput[i]:
+            return False
+        
+    return True
 
 if __name__ == "__main__":
-    nums1 = [1,2,3,4,5,6,7]
-    k1 = 3
-    nums2 = [-1,-100,3,99]
-    k2 = 2
+    tests = [
+        TestCase([1,2,3,4,5,6,7], 3, [5,6,7,1,2,3,4]),
+        TestCase([-1,-100,3,99], 2, [3,99,-1,-100]),
+        TestCase(["U","R","Q","U","I","Z","U"], 2, ["Z","U","U","R","Q","U","I"]),
+        TestCase(["U","R","Q","U","I","Z","U"], 5, ["Q","U","I","Z","U","U","R"]),
+        TestCase([-1], 2, [-1])
+    ]
 
-    print(f"nums = {nums1}, k = {k1}")
-    RotateArray1(nums1,k1)
-    print(nums1)
-    print(f"nums = {nums2}, k = {k2}")
-    RotateArray1(nums2,k2)
-    print(nums1)
+    for t in tests:
+        RotateArray(t.input, t.k)
+        assert sameArray(t.output, t.input), f"Expected output={t.output}, got {t.input}"        
