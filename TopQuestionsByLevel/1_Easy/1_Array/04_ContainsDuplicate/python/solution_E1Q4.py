@@ -1,22 +1,26 @@
-def ContainsDuplicate(array):
-    valMap = {}
-    for val in array:
-        if val in valMap:
+class TestCase:
+    def __init__(self, input, output):
+        self.input = input
+        self.output = output
+
+def ContainsDuplicate(nums):
+    entryMap = {}
+    for n in nums:
+        if n in entryMap:
             return True
         else:
-            valMap[val] = True
+            entryMap[n] = True
     return False
 
 if __name__ == "__main__":
-    nums1 = [1,2,3,1]
-    nums2 = [1,2,3,4]
-    nums3 = [1,1,1,3,3,4,3,2,4,2]
-    ans1 = ContainsDuplicate(nums1)
-    ans2 = ContainsDuplicate(nums2)
-    ans3 = ContainsDuplicate(nums3)
-    print(nums1)
-    print(ans1)
-    print(nums2)
-    print(ans2)
-    print(nums3)
-    print(ans3)
+    tests = [
+        TestCase([1,2,3,1], True),
+        TestCase([1,2,3,4], False),
+        TestCase([1,1,1,3,3,4,3,2,4,2], True)
+    ]
+
+    for t in tests:
+        result = ContainsDuplicate(t.input)
+        assert result == t.output, f"Expected result={t.output}, got {result}"
+
+    print("All tests passed!")
