@@ -1,5 +1,5 @@
 # [Plus One](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/559/)
-You are given a **large integer** represented as an integer array `digits`, where each `digits[i]` is the `ith` digit of the integer. The digits are ordered from most significant to least significance to least in left-to-right order. The large integer does not contain any leading `0`'s.  
+You are given a **large integer** represented as an integer array `digits`, where each `digits[i]` is the `iᵗʰ` digit of the integer. The digits are ordered from most significant to least significance to least in left-to-right order. The large integer does not contain any leading `0`'s.  
   
 Increment the large integer by one and return the *the resulting array of digits*.
 

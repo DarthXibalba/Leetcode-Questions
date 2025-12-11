@@ -1,48 +1,48 @@
-import math
-from collections import deque
+import copy
 
-def plusOne1(digits):
-    num = 0
-    for d in digits:
-        num = num*10 + d
-    # Increment by 1
-    num += 1
-    # Determine how many digits we will be returning by taking the log10(num)
-    # math.log10(10) // 1 == 1
-    # math.log10(9) // 1 == 0
-    L = int(math.log10(num) // 1) + 1
-    numArray = [0] * L  # Initialize a zero array of size L
-    for i in range(L):
-        numArray[L-1-i] = num % 10
-        num = num // 10
-    return numArray
+class TestCase:
+    def __init__(self, digits, output):
+        self.originalInput = copy.deepcopy(digits)
+        self.digits = digits
+        self.output = output
 
-# Second attempt, using deque
-def plusOne2(digits):
-    inDeque = deque(digits)
-    outDeque = deque()
-    carryover = 1
-    for i in range(len(inDeque)):
-        result = inDeque.pop() + carryover
-        outDeque.appendleft(result % 10)
-        carryover = result // 10
-    # If there is still a carryover at the end, then append it
-    if (carryover != 0):
-        outDeque.appendleft(carryover)
-    # Convert to list/array
-    output = [0] * len(outDeque)
-    for i,v in enumerate(outDeque):
-        output[i] = v
-    return output
+    def Check(self):
+        print("Input:  ", self.originalInput)
+        print("Result: ", self.digits)
+        print()
+        assert self.digits == self.output, f"Expected result={self.output}, got {self.digits}"
 
-
+def PlusOne(digits):
+    i = len(digits) - 1
+    while i >= 0:
+        sum = digits[i] + 1
+        if sum <= 9:
+            digits[i] = sum
+            return
+        else:
+            digits[i] = 0
+            i-=1
+    # If i = -1 then this means all entries were '9' and we have a carry over
+    digits[0] = 1
+    digits.append(0)
 
 if __name__ == "__main__":
-    digits = [
-        [1,2,3],
-        [4,3,2,1],
-        [9]
+    tests = [
+        TestCase([1,2,3], [1,2,4]),
+        TestCase([4,3,2,1], [4,3,2,2]),
+        TestCase([9],[1,0]),
+        TestCase([9,9],[1,0,0]),
+        TestCase([9,9,9],[1,0,0,0]),
+        TestCase([9,9,9,9],[1,0,0,0,0]),
+        TestCase([8,9,8,9],[8,9,9,0]),
+        TestCase([8,9,9,9],[9,0,0,0]),
+        TestCase([7,8,9,9],[7,9,0,0]),
+        TestCase([6,7,8,9],[6,7,9,0]),
+        TestCase([5,9,9,9],[6,0,0,0]),
     ]
-    for d in digits:
-        print(d)
-        print(plusOne2(d))
+
+    for t in tests:
+        PlusOne(t.digits)
+        t.Check()
+
+    print("All tests passed!")
