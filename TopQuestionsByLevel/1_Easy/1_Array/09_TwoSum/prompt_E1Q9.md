@@ -25,10 +25,10 @@ Output: [0,1]
 ```
 
 #### Constraints:
-- `2 <= nums.length <= 10^4`
-- `-10^9 <= nums[i] <= 10^9`
-- `-10^9 <= target <= 10^9`
+- `2 <= nums.length <= 10⁴`
+- `-10⁹ <= nums[i] <= 10⁹`
+- `-10⁹ <= target <= 10⁹`
 - **Only one valid answer exists**
 
 #### Follow-up:
-Can you come up with an algorithm that is less than `O(n^2)` time complexity?
+Can you come up with an algorithm that is less than `O(n²)` time complexity?

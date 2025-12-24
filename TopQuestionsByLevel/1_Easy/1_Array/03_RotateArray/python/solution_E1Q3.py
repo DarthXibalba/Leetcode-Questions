@@ -46,3 +46,5 @@ if __name__ == "__main__":
     for t in tests:
         RotateArray(t.input, t.k)
         assert sameArray(t.output, t.input), f"Expected output={t.output}, got {t.input}"        
+
+    print("All tests passed!")
