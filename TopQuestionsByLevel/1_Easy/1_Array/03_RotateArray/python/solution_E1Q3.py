@@ -1,8 +1,19 @@
+import copy
+
 class TestCase:
     def __init__(self, input, k, output):
         self.input = input
+        self.originalInput = copy.deepcopy(input)
         self.k = k
         self.output = output
+
+    def Check(self):
+        print("Input: ", self.originalInput)
+        print("k: ", self.k)
+        print("Result: ", self.input)
+        print("Exp Result: ", self.output)
+        print()
+        assert sameArray(self.output, self.input), f"Expected output={self.output}, got {self.input}"
 
 def RotateArray(nums, k):
     print(nums)
@@ -14,7 +25,6 @@ def RotateArray(nums, k):
     print(nums)
     reverseArray(nums, kmod, n-1)
     print(nums)
-    print()
 
 def reverseArray(nums, bound1, bound2):
     while bound1 < bound2:
@@ -45,6 +55,6 @@ if __name__ == "__main__":
 
     for t in tests:
         RotateArray(t.input, t.k)
-        assert sameArray(t.output, t.input), f"Expected output={t.output}, got {t.input}"        
+        t.Check()
 
     print("All tests passed!")
