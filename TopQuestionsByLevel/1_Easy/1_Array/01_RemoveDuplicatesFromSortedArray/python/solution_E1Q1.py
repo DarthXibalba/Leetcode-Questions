@@ -1,3 +1,20 @@
+import copy
+
+class TestCase:
+    def __init__(self, input, k, nums):
+        self.input = input
+        self.originalInput = copy.deepcopy(input)
+        self.k = k
+        self.nums = nums
+
+    def Check(self, k):
+        print("Input: ", self.originalInput)
+        print("Result: ", self.input)
+        print()
+        assert k == self.k, f"Expected k={self.k}, got {k}"
+        assert self.input[:k] == self.nums, f"Expected nums={self.nums}, got {self.input[:k]}"
+
+
 def RemoveDuplicates(sortedArray):
     i = 0
     j = i + 1
@@ -9,12 +26,6 @@ def RemoveDuplicates(sortedArray):
             sortedArray[i] = sortedArray[j]
     return i+1
 
-class TestCase:
-    def __init__(self, input, k, nums):
-        self.input = input
-        self.k = k
-        self.nums = nums
-
 if __name__ == "__main__":
     tests = [
         TestCase([1,1,2], 2, [1,2]),
@@ -24,8 +35,6 @@ if __name__ == "__main__":
     
     for t in tests:
         k = RemoveDuplicates(t.input)
-
-        assert k == t.k, f"Expected k={t.k}, got {k}"
-        assert t.input[:k] == t.nums, f"Expected nums={t.nums}, got {t.input[:k]}"
+        t.Check(k)
     
     print("All tests passed!")
