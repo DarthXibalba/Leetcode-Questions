@@ -1,7 +1,18 @@
+import copy
+
 class TestCase:
     def __init__(self, input, expOutput):
         self.input = input
+        self.originalInput = copy.deepcopy(input)
         self.profit = expOutput
+
+    def Check(self, profit):
+        print("Input: ", self.originalInput)
+        print("Profit: ", profit)
+        print("Exp Profit: ", self.profit)
+        print()
+        assert profit == self.profit, f"Expected profit={self.profit}, got {profit}"
+
 
 def BestTimeToBuyAndSell(prices):
     profit = 0
@@ -32,6 +43,6 @@ if __name__ == "__main__":
     
     for t in tests:
         profit = BestTimeToBuyAndSell(t.input)
-        assert profit == t.profit, f"Expected profit={t.profit}, got {profit}"
+        t.Check(profit)
 
     print("All tests passed!")

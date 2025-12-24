@@ -10,6 +10,9 @@ class TestCase:
     def Check(self, k):
         print("Input: ", self.originalInput)
         print("Result: ", self.input)
+        print("Exp Result: ", self.nums)
+        print("k: ", k)
+        print("Exp k: ", self.k)
         print()
         assert k == self.k, f"Expected k={self.k}, got {k}"
         assert self.input[:k] == self.nums, f"Expected nums={self.nums}, got {self.input[:k]}"
