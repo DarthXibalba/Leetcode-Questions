@@ -8,7 +8,7 @@ Note that the relative order inside both the even and odd groups should remain a
 You must solve the problem in `O(1)` extra space complexity and `O(n)` time complexity.  
   
 #### Example 1:
-<img src="images/example1.jpg" width="450" height="200">
+<img src="images/020202_example1.jpg" width="450" height="200">
 
 ```
 Input: head = [1,2,3,4,5]
@@ -16,7 +16,7 @@ Output: [1,3,5,2,4]
 ```
 
 #### Example 2:
-<img src="images/example2.jpg" width="600" height="200">
+<img src="images/020202_example2.jpg" width="600" height="200">
 
 ```
 Input: head = [2,1,3,5,6,4,7]
