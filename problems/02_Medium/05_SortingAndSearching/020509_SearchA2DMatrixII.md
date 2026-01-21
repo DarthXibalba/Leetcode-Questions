@@ -4,7 +4,7 @@ Write an efficient algorithm that searches for a value `target` in an `m x n` in
 - Integers in each column are sorted in ascending from top to bottom
 
 #### Example 1:
-<img src="images/example1.jpg" width="300" height="300">
+<img src="images/020509_example1.jpg" width="300" height="300">
 
 ```
 Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5
@@ -12,7 +12,7 @@ Output: true
 ```
 
 #### Example 2:
-<img src="images/example2.jpg" width="300" height="300">
+<img src="images/020509_example2.jpg" width="300" height="300">
 
 ```
 Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20
