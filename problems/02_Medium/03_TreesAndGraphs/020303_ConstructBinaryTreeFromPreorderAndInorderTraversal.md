@@ -2,7 +2,7 @@
 Given two integer arrays `preorder` and `inorder` where `preorder` is the preorder traversal of a binary tree and `inorder` is the inorder traversal of the same tree, construct and return *the binary tree.*
 
 #### Example 1:
-<img src="images/example1.jpg" width="200" height="200">
+<img src="images/020303_example1.jpg" width="200" height="200">
 
 ```
 Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]

@@ -5,7 +5,7 @@ The successor of a node `p` is the node with the smallest key greater than `p.va
 
 
 #### Example 1
-<img src="images/example1.png" width="100" height="100">
+<img src="images/020306_example1.png" width="100" height="100">
 
 ```
 Input: root = [2,1,3], p = 1
@@ -14,7 +14,7 @@ Explanation: 1's inorder successor node is 2. Note that both p and the return va
 ```
 
 #### Example 2
-<img src="images/example2.png" width="200" height="200">
+<img src="images/020306_example2.png" width="200" height="200">
 
 ```
 Input: root = [5,3,6,2,4,null,null,1], p = 6

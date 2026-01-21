@@ -14,7 +14,7 @@ Populate each next pointer to its next right node. If there is no next right nod
 Initially, all next pointers are set to `NULL`.
 
 #### Example 1:
-<img src="images/example1.png" width="500" height="200">
+<img src="images/020304_example1.png" width="500" height="200">
 
 ```
 Input: root = [1,2,3,4,5,6,7]
