@@ -4,7 +4,7 @@ Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire r
 You must do it **in place**.
 
 #### Example 1:
-<img src="images/example1.jpg" width="450" height="200">
+<img src="images/020102_example1.jpg" width="450" height="200">
 
 ```
 Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
@@ -12,7 +12,7 @@ Output: [[1,0,1],[0,0,0],[1,0,1]]
 ```
 
 #### Example 2:
-<img src="images/example2.jpg" width="600" height="200">
+<img src="images/020102_example2.jpg" width="600" height="200">
 
 ```
 Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
