@@ -4,17 +4,17 @@ Given an integer array `nums` where the elements are sorted in **ascending order
 A **height-balanced** binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
 
 #### Example 1:
-<img src="images/example1a.png" width="250" height="250">
+<img src="images/010405_example1a.png" width="250" height="250">
 
 ```
 Input: nums = [-10,-3,0,5,9]
 Output: [0,-3,9,-10,null,5]
 Explanation: [0,-10,5,null,-3,null,9] is also accepted:
 ```
-<img src="images/example1b.png" width="250" height="250">
+<img src="images/010405_example1b.png" width="250" height="250">
 
 #### Example 2:
-<img src="images/example2.png" width="250" height="150">
+<img src="images/010405_example2.png" width="250" height="150">
 
 ```
 Input: nums = [1,3]
