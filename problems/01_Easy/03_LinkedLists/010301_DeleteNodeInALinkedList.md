@@ -17,7 +17,7 @@ Delete the given node. Note that by deleting the node, we do not mean removing i
 - The output will be the entire list after calling your function
 
 #### Example 1
-<img src="images/example1.png" width="200" height="200">
+<img src="images/010301_example1.png" width="200" height="200">
 
 ```
 Input: head = [4,5,1,9], node = 5
@@ -26,7 +26,7 @@ Explanation: You are given the second node with value 5, the linked list should 
 ```
 
 #### Example 2
-<img src="images/example2.png" width="200" height="200">
+<img src="images/010301_example2.png" width="200" height="200">
 
 ```
 Input: head = [4,5,1,9], node = 1
