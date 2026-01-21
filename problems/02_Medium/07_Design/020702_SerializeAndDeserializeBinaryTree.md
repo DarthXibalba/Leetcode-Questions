@@ -6,7 +6,7 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
 **Clarification:** The input/output format is the same as [how LeetCode serializes a binary tree](https://support.leetcode.com/hc/en-us/articles/360011883654-What-does-1-null-2-3-mean-in-binary-tree-representation-). You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
 
 #### Example 1:
-<img src="images/example1.jpg" width="250" height="200">
+<img src="images/020702_example1.jpg" width="250" height="200">
 
 ```
 Input: root = [1,2,3,null,null,4,5]
