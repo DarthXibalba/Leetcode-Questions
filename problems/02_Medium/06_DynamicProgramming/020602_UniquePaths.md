@@ -6,7 +6,7 @@ Given the two integers `m` and `n`, return *the number of possible unique paths 
 The test cases are generated so that the answers will be less than or equal to `2 * 10^9`.
 
 #### Example 1:
-<img src="images/example1.png" width="300" height="150">
+<img src="images/020602_example1.png" width="300" height="150">
 
 ```
 Input: m = 3, n = 7
