@@ -9,7 +9,7 @@ Return *the maximum amount of water a container can store.*
 **Notice** that you may not slant the container.
 
 #### Example 1:
-<img src="images/image1.jpg" width="560" height="300">
+<img src="images/030104_image1.jpg" width="560" height="300">
 
 ```
 Input: height = [1,8,6,2,5,4,8,3,7]
