@@ -25,4 +25,4 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 
 #### Excalidraw of Solution
 
-<img src="images/010604_excalidraw.png" width="600" height="300">
+<img src="images/AFD_excalidraw.png" width="600" height="300">

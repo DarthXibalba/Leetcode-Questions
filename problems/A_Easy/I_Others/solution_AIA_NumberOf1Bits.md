@@ -32,7 +32,7 @@ We can make the previous algorithm simpler and a little faster. Instead of check
   
 The key idea here is to realize that for any number of *n*, doing a bit-wise AND of *n* and *n-1* flips the least-significant 1-bit in *n* to 0. Why? Consider the binary representations of *n* and *n-1*.
 
-<img src="images/010901_approach2solution.jpg" width="360" height="360">
+<img src="images/AIA_approach2solution.jpg" width="360" height="360">
 
 In the binary representation, the least significant 1-bit in *n* always corresponds to a 0-bit in *n-1*. Therefore, ANDing the two numbers *n* and *n-1* always flips the least significant 1-bit in *n* to 0, and keeps all the other bits the same.  
 

@@ -2,7 +2,7 @@
 Given the `root` of a binary tree, *check whether it is a mirror of itself* (i.e. symmetric around its center).
 
 #### Example 1:
-<img src="images/example1.png" width="200" height="150">
+<img src="images/ADC_example1.png" width="200" height="150">
 
 ```
 Input: root = [1,2,2,3,4,4,3]
@@ -10,7 +10,7 @@ Output: true
 ```
 
 #### Example 2:
-<img src="images/example2.png" width="200" height="150">
+<img src="images/ADC_example2.png" width="200" height="150">
 
 ```
 Input: root = [1,2,2,null,3,null,3]

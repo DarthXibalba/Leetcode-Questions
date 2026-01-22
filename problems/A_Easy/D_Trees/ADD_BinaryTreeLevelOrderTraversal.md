@@ -2,7 +2,7 @@
 Given the `root` of a binary tree, return *the level order traversal of its nodes' values* (i.e. from left to right, level by level).
 
 #### Example 1:
-<img src="images/010404_example1.png" width="250" height="250">
+<img src="images/ADD_example1.png" width="250" height="250">
 
 ```
 Input: root = [3,9,20,null,null,15,7]

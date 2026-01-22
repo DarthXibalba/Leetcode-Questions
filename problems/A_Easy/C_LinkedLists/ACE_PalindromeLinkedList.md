@@ -2,7 +2,7 @@
 Given the `head` of a singly linked list, return `true` *if it is a palindrome or* `false` *otherwise*.
 
 #### Example 1:
-<img src="images/010305_example1.png" width="400" height="80">
+<img src="images/ACE_example1.png" width="400" height="80">
 
 ```
 Input: head = [1,2,2,1]
@@ -10,7 +10,7 @@ Output: true
 ```
 
 #### Example 2:
-<img src="images/010305_example2.png" width="200" height="80">
+<img src="images/ACE_example2.png" width="200" height="80">
 
 ```
 Input: head = [1,2]

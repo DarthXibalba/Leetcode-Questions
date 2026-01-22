@@ -3,7 +3,7 @@ Given an integer `numRows`, return the first numRows of **Pascal's triangle**.
   
 In **Pascal's triangle**, each number is the sum of the two numbers directly above it as shown:  
 
-<img src="images/010904_PascalTriangleAnimated.gif" width="300" height="300">
+<img src="images/AID_PascalTriangleAnimated.gif" width="300" height="300">
 
 #### Example 1:
 ```

@@ -6,7 +6,7 @@ There is a cycle in a linked list if there is some node in the list can be reach
 Return `true` *if there is a cycle in a linked list*. Otherwise, return `false`.
 
 #### Example 1:
-<img src="images/010306_example1.png" width="400" height="120">
+<img src="images/ACF_example1.png" width="400" height="120">
 
 ```
 Input: head = [3,2,0,-4], pos = 1
@@ -15,7 +15,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
 ```
 
 #### Example 2:
-<img src="images/010306_example2.png" width="200" height="120">
+<img src="images/ACF_example2.png" width="200" height="120">
 
 ```
 Input: head = [1,2], pos = 0
@@ -24,7 +24,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
 ```
 
 #### Example 3:
-<img src="images/010306_example3.png" width="70" height="70">
+<img src="images/ACF_example3.png" width="70" height="70">
 
 ```
 Input: head = [1], pos = -1

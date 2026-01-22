@@ -6,7 +6,7 @@ Merge the two lists into one **sorted** list. The list should be made by splicin
 Return *the head of the merged linked list*.
 
 #### Example 1:
-<img src="images/010304_example1.png" width="500" height="300">
+<img src="images/ACD_example1.png" width="500" height="300">
 
 ```
 Input: list1 = [1,2,4], list2 = [1,3,4]
