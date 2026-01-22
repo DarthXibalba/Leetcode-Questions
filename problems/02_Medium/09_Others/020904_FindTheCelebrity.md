@@ -8,7 +8,7 @@ You are given a helper function `bool knows(a, b)` that tells you whether A know
 Return *the celebrity's label if there is a celebrity at the party*. If there is no celebrity, return `-1`.
 
 #### Example 1:
-<img src="images/example1.jpg" width="200" height="150">
+<img src="images/020904_example1.jpg" width="200" height="150">
 
 ```
 Input: graph = [[1,1,0],[0,1,0],[1,1,1]]
@@ -17,7 +17,7 @@ Explanation: There are three persons labeled with 0, 1 and 2. graph[i][j] = 1 me
 ```
 
 #### Example 2:
-<img src="images/example2.jpg" width="200" height="150">
+<img src="images/020904_example2.jpg" width="200" height="150">
 
 ```
 Input: graph = [[1,0,1],[1,1,0],[0,1,1]]
@@ -35,7 +35,7 @@ Explanation: There is no celebrity.
 If the maximum number of allowed calls to the API `knows` is `3 * n`, could you find a solution without exceeding the maximum number of calls?
 
 ##### Hint #1
-<img src="images/hint1.png" width="450" height="300">
+<img src="images/020904_hint1.png" width="450" height="300">
 
 The best hint for this problem can be provided by the following figure:
 
