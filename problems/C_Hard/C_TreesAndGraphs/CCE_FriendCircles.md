@@ -9,7 +9,7 @@ You are given an `n x n` matrix `isConnected` where `isConnected[i][j] = 1` if t
 Return *the total number of **provinces***.
 
 #### Example 1:
-<img src="images/030305_graph1.jpg">
+<img src="images/CCE_graph1.jpg">
 
 ```
 Input: isConnected = [[1,1,0],[1,1,0],[0,0,1]]
@@ -17,7 +17,7 @@ Output: 2
 ```
 
 #### Example 2:
-<img src="images/030305_graph2.jpg">
+<img src="images/CCE_graph2.jpg">
 
 ```
 Input: isConnected = [[1,0,0],[0,1,0],[0,0,1]]

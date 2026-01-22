@@ -15,7 +15,7 @@ Output: [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]
 ```
 
 ##### Explanation 1:
-<img src="images/030302_xogrid.jpg" width="773" height="333">
+<img src="images/CCB_xogrid.jpg" width="773" height="333">
 
 In the above diagram, the bottom region is not captured because it is on the edge of the board and cannot be surrounded.
 

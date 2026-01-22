@@ -15,7 +15,7 @@ Given the current state of the `board`, **update** the `board` to reflect its ne
 **Note** that you do not need to return anything.
 
 #### Example 1:
-<img src="images/030105_grid1.jpg" width="562" height="322">
+<img src="images/CAE_grid1.jpg" width="562" height="322">
 
 ```
 Input: board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
@@ -23,7 +23,7 @@ Output: [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
 ```
 
 #### Example 2:
-<img src="images/030105_grid2.jpg" width="402" height="162">
+<img src="images/CAE_grid2.jpg" width="402" height="162">
 
 ```
 Input: board = [[1,1],[1,0]]
