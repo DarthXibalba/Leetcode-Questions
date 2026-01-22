@@ -3,7 +3,7 @@
 Given the `head` of a linked list, return *the list after sorting it in **ascending order***.
 
 #### Example 1:
-<img src="images/sort_list_1.jpg" width="562" height="242">
+<img src="images/030202_sort_list_1.jpg" width="562" height="242">
 
 ```
 Input: head = [4,2,1,3]
@@ -11,7 +11,7 @@ Output: [1,2,3,4]
 ```
 
 #### Example 2:
-<img src="images/sort_list_2.jpg" width="722" height="242">
+<img src="images/030202_sort_list_2.jpg" width="722" height="242">
 
 ```
 Input: head = [-1,5,3,4,0]
