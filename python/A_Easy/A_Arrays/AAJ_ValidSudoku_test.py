@@ -1,7 +1,6 @@
 import pytest
 
 from python.A_Easy.A_Arrays.AAJ_ValidSudoku import valid_sudoku
-from python.pyutil.test_harness import run_cases
 
 
 def _board(rows: list[str]) -> list[list[str]]:
