@@ -75,10 +75,6 @@ CASES = [
     ),
 ]
 
-@pytest.mark.parametrize("name, board, expected", CASES)
+@pytest.mark.parametrize("name, board, expected", CASES, ids=[c[0] for c in CASES])
 def test_valid_sudoku(name: str, board: list[list[str]], expected: bool) -> None:
-    run_cases(
-        func=valid_sudoku,
-        cases=[(board, expected)],
-        name=name
-    )
+    assert valid_sudoku(board) is expected
