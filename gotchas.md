@@ -1,0 +1,1 @@
+ABB_ReverseInteger: Forgot to check out of bounds. Need to check if int will be greater than MAX // 10 in the second to last interation.
