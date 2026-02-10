@@ -9,7 +9,6 @@ CASES = [
     (CreateLinkedList([10,20,30,40,50,60,70,80,90,100]), 1, CreateLinkedList([10,30,40,50,60,70,80,90,100])),
     (CreateLinkedList([10,20,30,40,50,60,70,80,90,100]), 2, CreateLinkedList([10,20,40,50,60,70,80,90,100])),
     (CreateLinkedList([10,20,30,40,50,60,70,80,90,100]), 5, CreateLinkedList([10,20,30,40,50,70,80,90,100])),
-    (CreateLinkedList([10,20,30,40,50,60,70,80,90,100]), 2, CreateLinkedList([10,20,40,50,60,70,80,90,100])),
     (CreateLinkedList([10,20,30,40,50,60,70,80,90,100]), 8, CreateLinkedList([10,20,30,40,50,60,70,80,100]))
 ]
 
@@ -19,13 +18,21 @@ def test_delete_node_in_a_linked_list(n : ListNode, idx : int, expected : ListNo
     # Get node
     for _ in range(idx):
         n = n.next
+
+    print()
+    print("n =", idx)
+    PrettyPrintLinkedList(origNode)
+    PrettyPrintLinkedList(n)
+    print("----")
     delete_node_in_a_linked_list(n)
+    
+    PrettyPrintLinkedList(n)
+    PrettyPrintLinkedList(expected)
+    print()
     # assert equal
     curNode = origNode
     expNode = expected
     while (curNode != None):
-        print("curNode:", curNode.val)
-        print("expNode:", expNode.val)
         assert curNode.val == expNode.val
         curNode = curNode.next
         expNode = expNode.next
