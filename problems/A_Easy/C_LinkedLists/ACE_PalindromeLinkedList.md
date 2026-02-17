@@ -18,7 +18,7 @@ Output: false
 ```
 
 #### Constraints:
-- The number of nodes in the list is in the range `[1, 10^5]`
+- The number of nodes in the list is in the range `[1, 10⁵]`
 - `0 <= Node.val <= 9`
 
 #### Follow up:

@@ -9,3 +9,6 @@ A comprehensive list to learn from my mistakes.
 | ACB | - Remove Nth Node From End Of List | Use two ptrs to keep track of end & end + nth.<b>- Need to handle tail node properly with prevNode, not copy-left. |
 | ACC | Reverse Linked List | Iterate with curNode instead of nextNode to remove head is None or head.next is None edge cases. |
 | ACD | Merge Two Sorted Lists | Use sentinel & tail nodes to avoid switching lists (main & compare) |
+| ACE | Palindrome Linked List | Use fast/slow pointers to find the midpoint of the list (slow).
+| | | Use reverse_linked_list algo to reverse the 2nd half of the list so we can traverse from head & tail simultaneously. |
+| | | Account for the odd-invariant by making sure the slow pointer starts reversing from the beginning of the second half, **NOT** the midpoint. |
