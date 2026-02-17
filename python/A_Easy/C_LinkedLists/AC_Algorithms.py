@@ -1,4 +1,4 @@
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 def fast_slow_pointer_traversal(head: ListNode | None) -> tuple[ListNode | None, ListNode | None]:
     fast = head

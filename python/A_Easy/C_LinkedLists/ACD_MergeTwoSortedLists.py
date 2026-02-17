@@ -1,4 +1,4 @@
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 def merge_two_sorted_lists_1st_attempt(n1 : ListNode, n2 : ListNode) -> ListNode:
     if n1 == None:

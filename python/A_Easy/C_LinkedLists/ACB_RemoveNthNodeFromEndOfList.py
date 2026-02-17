@@ -1,4 +1,4 @@
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 def remove_nth_node_from_end(head: ListNode, n: int) -> ListNode | None:
     # If LL has only 1 element

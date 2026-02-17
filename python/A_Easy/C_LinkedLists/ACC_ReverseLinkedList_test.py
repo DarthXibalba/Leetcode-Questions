@@ -1,11 +1,7 @@
 import pytest
 
-from python.A_Easy.C_LinkedLists.ACC_ReverseLinkedList import reverse_linked_list
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import (
-    CreateLinkedList,
-    LinkedListToList,
-    PrettyPrintLinkedList,
-)
+from python.A_Easy.C_LinkedLists.ACC_ReverseLinkedList import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 @pytest.mark.parametrize(
     "input_list, expected",

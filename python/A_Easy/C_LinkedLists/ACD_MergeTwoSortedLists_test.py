@@ -1,11 +1,7 @@
 import pytest
 
-from python.A_Easy.C_LinkedLists.ACD_MergeTwoSortedLists import merge_two_sorted_lists
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import (
-    CreateLinkedList,
-    LinkedListToList,
-    PrettyPrintLinkedList,
-)
+from python.A_Easy.C_LinkedLists.ACD_MergeTwoSortedLists import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 @pytest.mark.parametrize(
     "input_list1, input_list2, expected",

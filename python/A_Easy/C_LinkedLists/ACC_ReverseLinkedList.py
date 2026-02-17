@@ -1,4 +1,4 @@
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 def reverse_linked_list_first_attempt(head: ListNode) -> ListNode:
     if head is None or head.next is None:

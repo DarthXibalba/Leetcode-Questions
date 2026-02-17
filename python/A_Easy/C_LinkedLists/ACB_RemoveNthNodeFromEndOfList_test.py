@@ -1,13 +1,7 @@
 import pytest
 
-from python.A_Easy.C_LinkedLists.ACB_RemoveNthNodeFromEndOfList import (
-    remove_nth_node_from_end,
-)
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import (
-    CreateLinkedList,
-    LinkedListToList,
-    PrettyPrintLinkedList,
-)
+from python.A_Easy.C_LinkedLists.ACB_RemoveNthNodeFromEndOfList import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 
 @pytest.mark.parametrize(

@@ -1,7 +1,7 @@
 import pytest
 
 from python.A_Easy.C_LinkedLists.ACE_PalindromeLinkedList import *
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 @pytest.mark.parametrize(
     "input_list, expected",

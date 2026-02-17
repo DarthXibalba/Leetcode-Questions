@@ -1,4 +1,4 @@
-from python.A_Easy.C_LinkedLists.AC_LinkedLists import *
+from python.A_Easy.C_LinkedLists.AC_DataStructures import *
 
 def is_palindrome_1st_attempt(head: ListNode) -> bool:
     vals = []
