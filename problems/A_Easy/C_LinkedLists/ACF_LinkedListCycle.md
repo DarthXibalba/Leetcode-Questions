@@ -1,7 +1,7 @@
 # [Linked List Cycle](https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/773/)
 Given `head`, the head of a linked list, determine if the linked list has a cycle in it.  
   
-There is a cycle in a linked list if there is some node in the list can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. **Note that `pos` is not passed as a paramter**.  
+There is a cycle in a linked list if there is some node in the list can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. **Note that `pos` is not passed as a parameter**.
   
 Return `true` *if there is a cycle in a linked list*. Otherwise, return `false`.
 
@@ -33,8 +33,8 @@ Explanation: There is no cycle in the linked list.
 ```
 
 #### Constraints:
-- The number of nodes in the list is in the range `[0, 10^4]`
-- `-10^5 <= Node.val <= 10^5`
+- The number of nodes in the list is in the range `[0, 10⁴]`
+- `-10⁵ <= Node.val <= 10⁵`
 - `pos` is `-1` or a **valid index** in the linked list
 
 #### Follow up:
