@@ -27,7 +27,7 @@ Output: true
 Can you do it with O(1) extra space?
 
 #### Follow up #2:
-How would you handle data  too large to fit in memory?" (Streaming detection)
+How would you handle data too large to fit in memory?" (Streaming)
 
 <details>
 <summary><b>Hint</b></summary>
@@ -38,6 +38,8 @@ Space: O(k) where k is the number of distinct items seen so far
 
 Approximate streaming (Bloom filter idea)
 If memory is tight and “maybe duplicates” is acceptable, a Bloom filter can detect duplicates with false positives but no false negatives (for membership). That’s typically the “advanced follow-up” discussion.
+
+Bloom filter is basically a compressed fingerprint of a set.
 </details>
 
 #### Follow up #3:
