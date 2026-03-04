@@ -1,7 +1,6 @@
 import pytest
 
 from python.A_Easy.A_Arrays.AAB_BestTimeToBuyAndSellStockII import best_time_to_buy_and_sell
-from python.pyutil.compare import *
 
 CASES = [
     ([7, 1, 5, 3, 6, 4], 7),
