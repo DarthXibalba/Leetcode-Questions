@@ -22,6 +22,6 @@ Explanation: Your f(x) should return k = 5
 ```
 
 #### Constraints
-- `1 <= nums.length <= 3*10^4`
+- `1 <= nums.length <= 3*10⁴`
 - `-100 <= nums[i] <= 100`
 - `nums` is sorted in **non-decreasing** order
